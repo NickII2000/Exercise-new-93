@@ -389,7 +389,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     }
 
-
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
