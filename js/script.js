@@ -366,7 +366,7 @@ window.addEventListener('DOMContentLoaded', () => {
         next = document.querySelector('.offer__slider-next'),
         total = document.querySelector('#total'),
         current = document.querySelector('#current');
-    let slideIndex = 2;
+    let slideIndex = 1;
 
     showSlides(slideIndex);
 
