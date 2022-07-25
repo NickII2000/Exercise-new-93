@@ -389,8 +389,8 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             offset += +width.slice(0, width.length - 2);
         }
-
-        slidesField.style.transform = 'translateX(-${offset}px)';
+        // console.log(offset);
+        slidesField.style.transform = `translateX(-${offset}px)`;
     });
 
     prev.addEventListener('click', () => {
@@ -399,8 +399,8 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             offset -= +width.slice(0, width.length - 2);
         }
-
-        slidesField.style.transform = 'translateX(-${offset}px)';
+        // console.log(offset);
+        slidesField.style.transform = `translateX(-${offset}px)`;
     });
 
     // showSlides(slideIndex);
