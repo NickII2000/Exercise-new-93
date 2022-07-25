@@ -393,7 +393,6 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             offset += +width.slice(0, width.length - 2);
         }
-        // console.log(offset);
         slidesField.style.transform = `translateX(-${offset}px)`;
         current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
 
@@ -412,8 +411,15 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             offset -= +width.slice(0, width.length - 2);
         }
-        // console.log(offset);
         slidesField.style.transform = `translateX(-${offset}px)`;
+
+        if (slideIndex == 1) {
+            slideIndex = slides.length;
+        } else {
+            slideIndex--;
+        }
+        current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
+
     });
 
     // showSlides(slideIndex);
