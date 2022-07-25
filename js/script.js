@@ -376,6 +376,7 @@ window.addEventListener('DOMContentLoaded', () => {
     total.textContent = slides.length < 10 ? `0${slides.length}` : slides.length;
     current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
 
+
     slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
@@ -394,6 +395,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         // console.log(offset);
         slidesField.style.transform = `translateX(-${offset}px)`;
+        current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
+
+        if (slideIndex == slides.length) {
+            slideIndex = 1;
+        } else {
+            slideIndex++;
+        }
+        current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
+
     });
 
     prev.addEventListener('click', () => {
