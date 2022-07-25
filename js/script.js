@@ -393,6 +393,16 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesField.style.transform = 'translateX(-${offset}px)';
     });
 
+    prev.addEventListener('click', () => {
+        if (offset == 0) { //'500px'
+            offset = +width.slice(0, width.length - 2) * (slides.length - 1);
+        } else {
+            offset -= +width.slice(0, width.length - 2);
+        }
+
+        slidesField.style.transform = 'translateX(-${offset}px)';
+    });
+
     // showSlides(slideIndex);
 
     // total.textContent = slides.length < 10 ? `0${slides.length}` : slides.length;
