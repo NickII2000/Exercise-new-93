@@ -374,6 +374,7 @@ window.addEventListener('DOMContentLoaded', () => {
         offset = 0;
 
     total.textContent = slides.length < 10 ? `0${slides.length}` : slides.length;
+    current.textContent = slideIndex < 10 ? `0${slideIndex}` : slideIndex;
 
     slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
