@@ -368,8 +368,10 @@ window.addEventListener('DOMContentLoaded', () => {
         current = document.querySelector('#current'),
         slidesWrapper = document.querySelector('.offer__slider-wrapper'),
         slidesField = document.querySelector('offer__slider-inner'),
-        width = window.getComputedStyle(slidesWrapper);
+        width = window.getComputedStyle(slidesWrapper).width;
     let slideIndex = 1;
+
+    slidesField.style.width = 100 * slides.length + '%';
 
     // showSlides(slideIndex);
 
