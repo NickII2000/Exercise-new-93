@@ -373,6 +373,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let slideIndex = 1,
         offset = 0;
 
+    total.textContent = slides.length < 10 ? `0${slides.length}` : slides.length;
+
     slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
