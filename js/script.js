@@ -372,6 +372,10 @@ window.addEventListener('DOMContentLoaded', () => {
     let slideIndex = 1;
 
     slidesField.style.width = 100 * slides.length + '%';
+    slides.forEach(slide => {
+        slideIndex.style.width = width;
+    });
+
 
     // showSlides(slideIndex);
 
