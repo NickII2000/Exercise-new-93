@@ -372,8 +372,10 @@ window.addEventListener('DOMContentLoaded', () => {
     let slideIndex = 1;
 
     slidesField.style.width = 100 * slides.length + '%';
+    slidesField.style.display = 'flex';
+
     slides.forEach(slide => {
-        slideIndex.style.width = width;
+        slide.style.width = width;
     });
 
 
