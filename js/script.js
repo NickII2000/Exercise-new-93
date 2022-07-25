@@ -375,6 +375,8 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
 
+    slidesWrapper.style.overflow = 'hidden';
+
     slides.forEach(slide => {
         slide.style.width = width;
     });
